@@ -4,7 +4,8 @@ resources
 node_modules
 venv
 **/__pycache__
-
+/media
+/static
 # Created by https://www.gitignore.io/api/django
 
 ### Django ###
