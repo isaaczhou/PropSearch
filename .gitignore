@@ -3,7 +3,7 @@ python_sandbox_starter
 resources
 node_modules
 venv
-btre/btre/__pycache__/*.pyc
+**/__pycache__
 
 
 # Created by https://www.gitignore.io/api/django
