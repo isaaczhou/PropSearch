@@ -3,9 +3,15 @@ from django.contrib import messages
 
 def register(request):
     if request.method == "POST":
-        messages.error(request, "Testing error message")
-        # Register User
-        return redirect("register")
+        # Get form values
+        first_name = request.POST["first_name"]
+        last_name = request.POST["last_name"]
+        usrname = request.POST["usrname"]
+        email = request.POST["email"]
+        password = request.POST["password"]
+        password2 = request.POST["password2"]
+
+        # Check if pss
     else:
         return render(request, "accounts/register.html")
 
