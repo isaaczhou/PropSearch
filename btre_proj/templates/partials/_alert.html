@@ -7,9 +7,9 @@
             </span></button>
         <strong>
             {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
-            ERROR:
+                ERROR:
             {% else %}
-            {{ title }}
+                {{ title }}
             {% endif %}
         </strong>
         {{message}}

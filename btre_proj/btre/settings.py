@@ -30,7 +30,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'pages.apps.PagesConfig', 'listings.apps.ListingsConfig',
-    'realtors.apps.RealtorsConfig', 'accounts.apps.AccountsConfig','django.contrib.admin',
+    'realtors.apps.RealtorsConfig', 'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig','django.contrib.admin',
     'django.contrib.auth', 'django.contrib.contenttypes',
     'django.contrib.sessions', 'django.contrib.messages',
     'django.contrib.staticfiles', 'django.contrib.humanize'
@@ -129,3 +130,10 @@ from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
+
+# Email Config
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "isaac20johnson@gmail.com"
+EMAIL_HOST_PASSWORD = "Isaac800Isaac"
+EMAIL_USE_TLS = True
